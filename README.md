@@ -1,5 +1,4 @@
 # ing-software-3
-![Texto alternativo](tp01/1.jpg)
 ## Trabajo Práctico 1 - Git Básico
 
 ### 1- Objetivos de Aprendizaje
