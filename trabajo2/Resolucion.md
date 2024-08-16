@@ -9,6 +9,7 @@
 ```bash
 docker version
 ```
+   ![Texto alternativo](imagenes/1.png)
 
 #### 2- Explorar DockerHub
    - Registrase en docker hub: https://hub.docker.com/
@@ -19,18 +20,21 @@ docker version
   ```bash
   docker pull busybox
   ```
-   ![Texto alternativo](imagenes/1.png)
+   ![Texto alternativo](imagenes/2.png)
 
   - Verificar qué versión y tamaño tiene la imagen bajada, obtener una lista de imágenes locales:
 ```bash
 docker images
 ```
+   ![Texto alternativo](imagenes/4.png)
+
 
 #### 4- Ejecutando contenedores
   - Ejecutar un contenedor utilizando el comando **run** de docker:
 ```bash
 docker run busybox
 ```
+   ![Texto alternativo](imagenes/5.png)
 
   - Explicar porque no se obtuvo ningún resultado
 
@@ -38,15 +42,20 @@ docker run busybox
 ```bash
 docker run busybox echo "Hola Mundo"
 ```
+   ![Texto alternativo](imagenes/7.png)
 
   - Ver los contenedores ejecutados utilizando el comando **ps**:
 ```bash
 docker ps
 ```
+   ![Texto alternativo](imagenes/8.png)
+
   - Vemos que no existe nada en ejecución, correr entonces:
 ```bash
 docker ps -a
 ```
+   ![Texto alternativo](imagenes/9.png)
+
   - Mostrar el resultado y explicar que se obtuvo como salida del comando anterior.
 
 #### 5- Ejecutando en modo interactivo
@@ -55,6 +64,7 @@ docker ps -a
 ```bash
 docker run -it busybox sh
 ```
+
   - Para cada uno de los siguientes comandos dentro de contenedor, mostrar los resultados:
 ```bash
 ps
@@ -62,6 +72,8 @@ uptime
 free
 ls -l /
 ```
+   ![Texto alternativo](imagenes/10.png)
+
   - Salimos del contenedor con:
 ```bash
 exit
@@ -73,10 +85,14 @@ exit
 ```bash
 docker ps -a
 ```
+   ![Texto alternativo](imagenes/11.png)
+
   - Para borrar podemos utilizar el id o el nombre (autogenerado si no se especifica) de contenedor que se desee, por ejemplo:
 ```bash
 docker rm elated_lalande
 ```
+   ![Texto alternativo](imagenes/12.png)
+
   - Para borrar todos los contenedores que no estén corriendo, ejecutar cualquiera de los siguientes comandos:
 ```bash
 docker rm $(docker ps -a -q -f status=exited)
@@ -84,6 +100,7 @@ docker rm $(docker ps -a -q -f status=exited)
 ```bash
 docker container prune
 ```
+   ![Texto alternativo](imagenes/13.png)
 
 #### 7- Construir una imagen
 - Conceptos de DockerFile
@@ -98,10 +115,14 @@ docker container prune
      - ENTRYPOINT
 - A partir del código https://github.com/ingsoft3ucc/SimpleWebAPI crearemos una imagen.
 - Clonar repo
+     ![Texto alternativo](imagenes/14.png)
+
 - Crear imagen etiquetándola con un nombre. El punto final le indica a Docker que use el dir actual
 ```
 docker build -t mywebapi .
 ```
+   ![Texto alternativo](imagenes/15.png)
+
 - Revisar Dockerfile y explicar cada línea
 - Ver imágenes disponibles
 - Ejecutar un contenedor con nuestra imagen
