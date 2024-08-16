@@ -19,7 +19,7 @@ docker version
   ```bash
   docker pull busybox
   ```
-   ![Texto alternativo](imagenes/1.jpg)
+   ![Texto alternativo](imagenes/1.png)
 
   - Verificar qué versión y tamaño tiene la imagen bajada, obtener una lista de imágenes locales:
 ```bash
