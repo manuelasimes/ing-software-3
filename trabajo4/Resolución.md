@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/cb4c0ba5-d181-4afc-9020-9d3c0cee483d) Pasos del TP
+Pasos del TP
 4.1 Verificar acceso a Pipelines concedido
    ![Texto alternativo](imagenes/1.png)
 
