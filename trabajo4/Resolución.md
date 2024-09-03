@@ -3,7 +3,7 @@
    ![Texto alternativo](imagenes/1.png)
 
 4.2 Agregar en pipeline YAML una tarea de Publish.
-   ![Texto alternativo](imagenes/https://github.com/manuelasimes/ing-software-3/blob/main/trabajo4/imagenes/Captura%20de%20pantalla%202024-08-27%20142052.png)
+   ![Texto alternativo](imagenes/2.png)
 
 4.3 Explicar por qué es necesario contar con una tarea de Publish en un pipeline que corre en un agente de Microsoft en la nube.
 Por varias razones contar con una tarea publish es crucial. Primero, una tarea de Publish permite empaquetar y publicar los artefactos generados (como compilaciones, binarios, 
