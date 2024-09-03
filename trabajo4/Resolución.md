@@ -1,4 +1,4 @@
- Pasos del TP
+![image](https://github.com/user-attachments/assets/cb4c0ba5-d181-4afc-9020-9d3c0cee483d) Pasos del TP
 4.1 Verificar acceso a Pipelines concedido
    ![Texto alternativo](imagenes/1.png)
 
@@ -100,11 +100,32 @@ Sin Restricciones de Ejecución: Cuando necesitas ejecutar trabajos que pueden e
 4.8 Crear un Pool de Agentes y un Agente Self-Hosted
 
 4.9 Instalar y correr un agente en nuestra máquina local.
+![Texto alternativo](imagenes/37.png)
+![Texto alternativo](imagenes/16.png)
+![Texto alternativo](imagenes/17.png)
+![Texto alternativo](imagenes/18.png)
+![Texto alternativo](imagenes/19.png)
+![Texto alternativo](imagenes/20.png)
+![Texto alternativo](imagenes/21.png)
 4.10 Crear un pipeline que use el agente Self-Hosted alojado en nuestra máquina local.
 4.11 Buscar el resultado del pipeline y correr localmente el software compilado.
 4.12 Crear un nuevo proyecto en ADO clonado desde un repo que contenga una aplicación en Angular como por ejemplo https://github.com/ingsoft3ucc/angular-demo-project.git
+![Texto alternativo](imagenes/24.png)
 4.13 Configurar un pipeline de build para un proyecto de tipo Angular como el clonado.
+![Texto alternativo](imagenes/25.png)
 4.14 Habilitar CI para el pipeline.
+![Texto alternativo](imagenes/38.png)
+
 4.15 Hacer un cambio a un archivo del proyecto (algún cambio en el HTML que se renderiza por ejemplo) y verificar que se ejecute automáticamente el pipeline.
+![Texto alternativo](imagenes/28.png)
+![Texto alternativo](imagenes/29.png)
+![Texto alternativo](imagenes/26.png)
+
+
 4.16 Descargar el resultado del pipeline y correr en un servidor web local el sitio construido.
 4.17 Mostrar el antes y el después del cambio.
+Antes:
+![Texto alternativo](imagenes/27.png)
+Despues: 
+![Texto alternativo](imagenes/32.png)
+
