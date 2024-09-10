@@ -1,6 +1,6 @@
-![Captura de pantalla 2024-09-10 155830](https://github.com/user-attachments/assets/388dbd4d-9af0-4670-a905-61fba4c0c151)![image](https://github.com/user-attachments/assets/d6e2ca6e-46b8-4e74-9c15-c9d32059984f)![image](https://github.com/user-attachments/assets/c883b9f2-1e80-469b-9501-b35680f9d5b2)Desarrollo:
+Desarrollo:
 4.1. Crear una cuenta en Azure
-
+Ya tenia creada una. 
 4.2. Crear un recurso Web App en Azure Portal y navegar a la url provista
    ![Texto alternativo](imagenes/1.png)
    ![Texto alternativo](imagenes/2.png)
