@@ -1,6 +1,9 @@
 Desarrollo:
+
 4.1. Crear una cuenta en Azure
+
 Ya tenia creada una. 
+
 4.2. Crear un recurso Web App en Azure Portal y navegar a la url provista
    ![Texto alternativo](imagenes/1.png)
    ![Texto alternativo](imagenes/2.png)
