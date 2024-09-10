@@ -1,4 +1,4 @@
-Pasos del TP
+![image](https://github.com/user-attachments/assets/533fafcb-d5a6-438b-8c6a-5414058a4e50)Pasos del TP
 4.1 Verificar acceso a Pipelines concedido
    ![Texto alternativo](imagenes/1.png)
 
@@ -14,12 +14,13 @@ En un flujo de trabajo de integración y entrega continua (CI/CD), los artefacto
 Publicar estos artefactos es un paso necesario para garantizar que el código que pasa las pruebas y validaciones pueda ser desplegado de manera confiable y automatizada.
 A su vez, permite llevar un historial de los builds y artefactos generados, lo cual es importante para rastrear cambios, realizar auditorías, o restaurar versiones anteriores si es necesario.
 4.4 Descargar el resultado del pipeline y correr localmente el software compilado.
-   ![Texto alternativo](imagenes/4.png)
    ![Texto alternativo](imagenes/5.png)
    ![Texto alternativo](imagenes/6.png)
+   Ahora corremos el software
    ![Texto alternativo](imagenes/12.png)
 
 4.5 Habilitar el editor clásico de pipelines. Explicar las diferencias claves entre este tipo de editor y el editor YAML.
+Habilitamos el editor clasico en Organization Settings:
    ![Texto alternativo](imagenes/33.png)
    Sus diferencias claves s encuentran en: 
    1. Interfaz de Usuario o Codigo: EL editor clasico se basa en una interfaz gráfica de usuario (GUI) donde los usuarios configuran el pipeline utilizando formularios, cuadros de diálogo y opciones desplegables.
@@ -35,18 +36,27 @@ A su vez, permite llevar un historial de los builds y artefactos generados, lo c
    6.  Adopción de Prácticas Modernas: el editor clásico es adecuado para usuarios que recién comienzan con DevOps o que prefieren una configuración rápida y sencilla sin profundizar en la codificación.
    Por otro lado, el editor YAML es preferido por equipos que adoptan prácticas modernas de DevOps, donde la codificación y el control de versiones de la infraestructura son clave.
 4.6 Crear un nuevo pipeline con el editor clásico. Descargar el resultado del pipeline y correr localmente el software compilado.
+ELegimos la opción de Editor Clasico:
    ![Texto alternativo](imagenes/7.png)
+Continuamos los pasos:
    ![Texto alternativo](imagenes/8.png)
    ![Texto alternativo](imagenes/9.png)
+Corremos el pipeline:
    ![Texto alternativo](imagenes/10.png)
    ![Texto alternativo](imagenes/11.png)
-   ![Texto alternativo](imagenes/12.png)
+Ejecutamos el resultado:
+   ![Texto alternativo](imagenes/13.png)
 
 4.7 Configurar CI en ambos pipelines (YAML y Classic Editor). Mostrar resultados de la ejecución automática de ambos pipelines al hacer un commit en la rama main.
+Seleccionamos Enable CI:
    ![Texto alternativo](imagenes/14.png)
+Ahora en YAML:
    ![Texto alternativo](imagenes/15.png)
+Hacemos un cambio:
    ![Texto alternativo](imagenes/34.png)
+Hacemos el commit:
    ![Texto alternativo](imagenes/35.png)
+Vemos que corren pipelines de forma automatica:
   ![Texto alternativo](imagenes/36.png)
 
 
@@ -98,28 +108,46 @@ Control Total del Entorno: Cuando se requiere control total sobre el entorno de 
 Escalabilidad Controlada: Cuando tienes la infraestructura para manejar grandes volúmenes de compilaciones y quieres evitar los costos de los agentes hospedados en la nube.
 Sin Restricciones de Ejecución: Cuando necesitas ejecutar trabajos que pueden exceder los límites de tiempo o recursos disponibles en los agentes de Microsoft.
 4.8 Crear un Pool de Agentes y un Agente Self-Hosted
-
-4.9 Instalar y correr un agente en nuestra máquina local.
-![Texto alternativo](imagenes/37.png)
+Creamos el personal access token: 
 ![Texto alternativo](imagenes/16.png)
 ![Texto alternativo](imagenes/17.png)
+AHora, creamos el pool e instalamos el agente en nuestro entorno:
 ![Texto alternativo](imagenes/18.png)
+
+4.9 Instalar y correr un agente en nuestra máquina local.
 ![Texto alternativo](imagenes/19.png)
 ![Texto alternativo](imagenes/20.png)
+Llegando a:
 ![Texto alternativo](imagenes/21.png)
+COnfigurando el agente:
+![Texto alternativo](imagenes/39.png)
+
 4.10 Crear un pipeline que use el agente Self-Hosted alojado en nuestra máquina local.
+![Texto alternativo](imagenes/40.png)
+Lo guardamos y ejecutamos. 
 4.11 Buscar el resultado del pipeline y correr localmente el software compilado.
+Vemos que se ejecuto correctamente y lo corremos SimpleWebAPI:
+![Texto alternativo](imagenes/41.png)
+
 4.12 Crear un nuevo proyecto en ADO clonado desde un repo que contenga una aplicación en Angular como por ejemplo https://github.com/ingsoft3ucc/angular-demo-project.git
+Creamos un nuevo proyecto e importamos el repo:
 ![Texto alternativo](imagenes/24.png)
 4.13 Configurar un pipeline de build para un proyecto de tipo Angular como el clonado.
+Configuramos el pipeline de build y vemos que se ejecuta, aca el job:
 ![Texto alternativo](imagenes/25.png)
+Vemos que funciona, hay 1 published:
+![Texto alternativo](imagenes/26.png)
 4.14 Habilitar CI para el pipeline.
+Lo habilitamos y dice enabled:
 ![Texto alternativo](imagenes/38.png)
 
 4.15 Hacer un cambio a un archivo del proyecto (algún cambio en el HTML que se renderiza por ejemplo) y verificar que se ejecute automáticamente el pipeline.
+Hacemos el cambio:
 ![Texto alternativo](imagenes/28.png)
+Lo commiteamos:
 ![Texto alternativo](imagenes/29.png)
-![Texto alternativo](imagenes/26.png)
+Vemos que el pipeline se publicó:
+![Texto alternativo](imagenes/42.png)
 
 
 4.16 Descargar el resultado del pipeline y correr en un servidor web local el sitio construido.
