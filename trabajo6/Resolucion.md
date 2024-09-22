@@ -1,124 +1,123 @@
 Prerequisitos:
 En primer lugar, instalé lo necesraio para desarrollar el trabajo. 
-    ![Texto alternativo](imagenes/1.jpg)
-    ![Texto alternativo](imagenes/2.jpg)
-    ![Texto alternativo](imagenes/3.jpg)
+    ![Texto alternativo](imagenes/1.png)
+    ![Texto alternativo](imagenes/2.png)
+    ![Texto alternativo](imagenes/3.png)
 
 4.1 Creación de una BD SQL Server para nuestra App
 Opte por la opción 2: 
-    ![Texto alternativo](imagenes/4.jpg)
-    ![Texto alternativo](imagenes/5.jpg)
-    ![Texto alternativo](imagenes/6.jpg)
+    ![Texto alternativo](imagenes/4.png)
+    ![Texto alternativo](imagenes/5.png)
+    ![Texto alternativo](imagenes/6.png)
 Clonar el repo https://github.com/ingsoft3ucc/Angular_WebAPINetCore8_CRUD_Sample.git
-    ![Texto alternativo](imagenes/clonar.jpg)
+    ![Texto alternativo](imagenes/clonar.png)
 
 B. Seguir las instrucciones del README.md del repo clonado prestando atención a la modificación de la cadena de conexión en el appSettings.json para que apunte a la BD creada en 4.1
-    ![Texto alternativo](imagenes/8.jpg)
+    ![Texto alternativo](imagenes/8.png)
 C. Navegar a http://localhost:7150/swagger/index.html y probar uno de los controladores para verificar el correcto funcionamiento de la API.
-    ![Texto alternativo](imagenes/7.jpg)
+    ![Texto alternativo](imagenes/7.png)
 D. Navegar a http://localhost:4200 y verificar el correcto funcionamiento de nuestro front-end Angular
-    ![Texto alternativo](imagenes/9.jpg)
+    ![Texto alternativo](imagenes/9.png)
 E. Una vez verificado el correcto funcionamiento de la Aplicación procederemos a crear un proyecto de pruebas unitarias para nuestra API.
 
 4.3 Crear Pruebas Unitarias para nuestra API
 A. En el directorio raiz de nuestro repo crear un nuevo proyecto de pruebas unitarias para nuestra API
-    ![Texto alternativo](imagenes/10.jpg)
+    ![Texto alternativo](imagenes/10.png)
 B. Instalar dependencias necesarias
-    ![Texto alternativo](imagenes/11.jpg)
+    ![Texto alternativo](imagenes/11.png)
 C. Editar archivo UnitTest1.cs reemplazando su contenido por
-    ![Texto alternativo](imagenes/12.jpg)
+    ![Texto alternativo](imagenes/12.png)
 D. Renombrar archivo UnitTest1.cs por EmployeeControllerUnitTests.cs
-    ![Texto alternativo](imagenes/13.jpg)
+    ![Texto alternativo](imagenes/13.png)
 E. Editar el archivo EmployeeCrudApi.Tests/EmployeeCrudApi.Tests.csproj para agregar una referencia a nuestro proyecto de EmployeeCrudApi reemplazando su contenido por
 Lo edité
 F. Ejecutar los siguientes comandos para ejecutar nuestras pruebas
 G. Verificar que se hayan ejecutado correctamente las pruebas
-    ![Texto alternativo](imagenes/14.jpg)
-    ![Texto alternativo](imagenes/15.jpg)
+    ![Texto alternativo](imagenes/14.png)
+    ![Texto alternativo](imagenes/15.png)
 H. Verificar que no estamos usando una dependencia externa como la base de datos.
 
 I. Modificar la cadena de conexión en el archivo appsettings.json para que use un usuario o password incorrecto y recompilar el proyecto EmployeeCrudApi
-    ![Texto alternativo](imagenes/16.jpg)
-    ![Texto alternativo](imagenes/17.jpg)
+    ![Texto alternativo](imagenes/16.png)
+    ![Texto alternativo](imagenes/17.png)
 J. Verificar que nuestro proyecto ya no tiene acceso a la BD navegando a http://localhost:7150/swagger/index.html y probando uno de los controladores:
-    ![Texto alternativo](imagenes/18.jpg)
+    ![Texto alternativo](imagenes/18.png)
 K. En la carpeta de nuestro proyecto EmployeeCrudApi.Tests volver a correr las pruebas
 
 L. Verificar que se hayan ejecutado correctamente las pruebas inclusive sin tener acceso a la BD, lo que confirma que es efectivamente un conjunto de pruebas unitarias que no requieren de una dependencia externa para funcionar.
-
-    ![Texto alternativo](imagenes/19.jpg)
+![Texto alternativo](imagenes/19.png)
 M. Modificar la cadena de conexión en el archivo appsettings.json para que use el usuario y password correcto y recompilar el proyecto EmployeeCrudApi
 N. Verificar que nuestro proyecto vuelve a tener acceso a la BD navegando a http://localhost:7150/swagger/index.html y probando uno de los controladores:
-    ![Texto alternativo](imagenes/20.jpg)
+    ![Texto alternativo](imagenes/20.png)
 
 4.4 Creamos pruebas unitarias para nuestro front de Angular:
 A. Nos posicionamos en nuestro proyecto de front, en el directorio EmployeeCrudAngular/src/app
 
 B. Editamos el archivo app.component.spec.ts reemplazando su contenido por:
-    ![Texto alternativo](imagenes/21.jpg)
+    ![Texto alternativo](imagenes/21.png)
 C. Creamos el archivo employee.service.spec.ts reemplazando su contenido por:
-    ![Texto alternativo](imagenes/22.jpg)
+    ![Texto alternativo](imagenes/22.png)
 D. Editamos el archivo employee.component.spec.ts ubicado en la carpeta employee reemplazando su contenido por:
 Lo edité
 E. Editamos el archivo addemployee.component.spec.ts ubicado en la carpeta addemployee reemplazando su contenido por:
-    ![Texto alternativo](imagenes/23.jpg)
+    ![Texto alternativo](imagenes/23.png)
 F. En el directorio raiz de nuestro proyecto EmployeeCrudAngular ejecutamos el comando
 
 ng test
 G. Vemos que se abre una ventana de Karma con Jasmine en la que nos indica que los tests se ejecutaron correctamente
 Efectivamente se abió: 
-    ![Texto alternativo](imagenes/24.jpg)
+    ![Texto alternativo](imagenes/24.png)
 Las pruebas se ejecutaron correctamente. 
 I. Verificamos que no esté corriendo nuestra API navegando a http://localhost:7150/swagger/index.html y recibiendo esta salida:
-    ![Texto alternativo](imagenes/25.jpg)
+    ![Texto alternativo](imagenes/25.png)
 4.5 Agregamos generación de reporte XML de nuestras pruebas de front.
 A. Instalamos dependencia karma-junit-reporter
-    ![Texto alternativo](imagenes/26.jpg)
+    ![Texto alternativo](imagenes/26.png)
 
 B. En el directorio raiz de nuestro proyecto (al mismo nivel que el archivo angular.json) creamos un archivo karma.conf.js con el siguiente contenido
-    ![Texto alternativo](imagenes/27.jpg)
+    ![Texto alternativo](imagenes/27.png)
 
 C. Ejecutamos nuestros test de la siguiente manera:
 
 ng test --karma-config=karma.conf.js --watch=false --browsers ChromeHeadless
 D. Verificamos que se creo un archivo test-result.xml en el directorio test-results que está al mismo nivel que el directorio src
-    ![Texto alternativo](imagenes/28.jpg)
+    ![Texto alternativo](imagenes/28.png)
 
 4.6 Modificamos el código de nuestra API y creamos nuevas pruebas unitarias:
 Realice la ssiguientes 5 modificaciones: 
 Al agregar y al editar un empleado, controlar que el nombre del empleado no esté repetido.
-    ![Texto alternativo](imagenes/29.jpg)
+    ![Texto alternativo](imagenes/29.png)
 Vemos que funciona: 
-    ![Texto alternativo](imagenes/30.jpg)
+    ![Texto alternativo](imagenes/30.png)
 La longitud máxima del nombre y apellido del empleado debe ser de 100 caracteres.
 Almacenar el nombre en la BD siempre con la primera letra de los nombres en Mayuscula y todo el apellido en Mayusculas. Ejemplo, si recibo juan carlos chamizo, se debe almacenar como Juan Carlos CHAMIZO.
 Asegurar que el nombre del empleado no contenga caracteres especiales o números, a menos que sea necesario (por ejemplo, caracteres especiales en apellidos como "O'Connor" o "García").
-    ![Texto alternativo](imagenes/32.jpg)
+    ![Texto alternativo](imagenes/32.png)
 Validar que el nombre tenga un número mínimo de caracteres, por ejemplo, al menos dos caracteres para evitar entradas inválidas como "A".
-    ![Texto alternativo](imagenes/31.jpg)
+    ![Texto alternativo](imagenes/31.png)
 B. Crear las pruebas unitarias necesarias para validar las modificaciones realizadas en el código
-    ![Texto alternativo](imagenes/33.jpg)
-    ![Texto alternativo](imagenes/34.jpg)
-    ![Texto alternativo](imagenes/35.jpg)
-    ![Texto alternativo](imagenes/36.jpg)
-    ![Texto alternativo](imagenes/37.jpg)
+    ![Texto alternativo](imagenes/33.png)
+    ![Texto alternativo](imagenes/34.png)
+    ![Texto alternativo](imagenes/35.png)
+    ![Texto alternativo](imagenes/36.png)
+    ![Texto alternativo](imagenes/37.png)
 
 4.7 Modificamos el código de nuestro Front y creamos nuevas pruebas unitarias:
 A. Realizar en el código del front las mismas modificaciones hechas a la API.
 
 Vemos como responde el front en estos dos ejemplos:
-    ![Texto alternativo](imagenes/38.jpg)
-    ![Texto alternativo](imagenes/39.jpg)
+    ![Texto alternativo](imagenes/38.png)
+    ![Texto alternativo](imagenes/39.png)
 B. Las validaciones deben ser realizadas en el front sin llegar a la API, y deben ser mostradas en un toast como por ejemplo https://stackblitz.com/edit/angular12-toastr?file=src%2Fapp%2Fapp.component.ts o https://stackblitz.com/edit/angular-error-toast?file=src%2Fapp%2Fcore%2Frxjsops.ts
 Vemos como se usa Toastr:
-    ![Texto alternativo](imagenes/40.jpg)
-    ![Texto alternativo](imagenes/42.jpg)
+    ![Texto alternativo](imagenes/40.png)
+    ![Texto alternativo](imagenes/42.png)
 Para este tercer caso, se ve como se modifica el apellido por todas mayusculas, y como se crea una lista local sin llegar al back y no deja repetir nombres:
-    ![Texto alternativo](imagenes/43.jpg)
+    ![Texto alternativo](imagenes/43.png)
 C. Crear las pruebas unitarias necesarias en el front para validar las modificaciones realizadas en el código del front.
-    ![Texto alternativo](imagenes/44.jpg)
-    ![Texto alternativo](imagenes/45.jpg)
-    ![Texto alternativo](imagenes/46.jpg)
+    ![Texto alternativo](imagenes/44.png)
+    ![Texto alternativo](imagenes/45.png)
+    ![Texto alternativo](imagenes/46.png)
 
 
 
