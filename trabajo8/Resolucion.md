@@ -8,7 +8,7 @@
   4.1.3 Modificar nuestro pipeline en la etapa de Build y Test
 Aca tenemos para la publicacion del dockerfile de back: 
 ![Texto alternativo](imagenes/6.png)
-De forma analiga, como en el instructivo, hice lo mismo para el front. 
+De forma analoga, como en el instructivo, hice lo mismo para el front. 
 4.1.4 En caso de no contar en nuestro proyecto con una ServiceConnection a Azure Portal para el manejo de recursos, agregar una service connection a Azure Resource Manager como se indica en instructivo 5.2
 Si contaba con una:
 ![Texto alternativo](imagenes/8.png)
