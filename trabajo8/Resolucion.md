@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/8fc5d3bd-7a8e-4e9a-9e01-1dc1ae442c84)4.1 Modificar nuestro pipeline para construir imágenes Docker de back y front y subirlas a ACR
+4.1 Modificar nuestro pipeline para construir imágenes Docker de back y front y subirlas a ACR
       ![Texto alternativo](imagenes/2.png)
       ![Texto alternativo](imagenes/3.png)
       ![Texto alternativo](imagenes/4.png)
