@@ -97,6 +97,8 @@ Vemos como funcionan:
     ![Texto alternativo](imagenes/51.png)
     ![Texto alternativo](imagenes/52.png)
     ![Texto alternativo](imagenes/53.png)
-    ![Texto alternativo](imagenes/54.png)
-    ![Texto alternativo](imagenes/55.png)
-(Aclaro que hay nombres repetidos pero pertenecen a distintos deploys)
+    Web Apps:
+   ![Texto alternativo](imagenes/56.png)
+   ![Texto alternativo](imagenes/58.png)
+
+
