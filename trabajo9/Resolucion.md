@@ -72,6 +72,9 @@ D) Deploy Back y Front en QA con pruebas de integración para ACI
     ![Texto alternativo](imagenes/42.png)
     ![Texto alternativo](imagenes/43.png)
     ![Texto alternativo](imagenes/44.png)
+ANte un error, se frena la ejecución: 
+    ![Texto alternativo](imagenes/frena.png)
+    ![Texto alternativo](imagenes/test.png)
 
 E) Deploy Back y Front en QA con pruebas de integración para Azure Web Apps con Soporte para contenedores
 Este punto esta desarrollado más especificamente en la primer parte del trabajo. 
