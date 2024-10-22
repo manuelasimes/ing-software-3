@@ -99,3 +99,4 @@ Vemos como funcionan:
     ![Texto alternativo](imagenes/53.png)
     ![Texto alternativo](imagenes/54.png)
     ![Texto alternativo](imagenes/55.png)
+(Aclaro que hay nombres repetidos pero pertenecen a distintos deploys)
